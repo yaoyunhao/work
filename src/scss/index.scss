@@ -1,0 +1,61 @@
+@import "_mixin.scss";
+@import "common.scss";
+#app {
+    @include num(100%, 100%);
+}
+
+.wrap {
+    @include num(100%, 100%);
+    @include flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.top {
+    @include num(100%, rem(44px));
+    background: #666;
+    color: #fff;
+    text-align: center;
+    line-height: rem(44px);
+    font-size: rem(20px);
+}
+
+.center {
+    @include num(100%, auto);
+    padding: 0 rem(20px);
+    @include sizing;
+    img {
+        @include num(100%, auto);
+    }
+    button {
+        @include num(100%, rem(40px));
+        background: #666;
+        border-radius: rem(40px);
+        font-size: rem(16px);
+        color: #ccc;
+        margin-top: rem(20px);
+    }
+    .buttons {
+        @include num(100%, auto);
+        padding: 0 rem(20px);
+        @include sizing;
+        text-align: center;
+        button {
+            @include num(100%, rem(40px));
+            border: 2px solid pink;
+            border-radius: rem(40px);
+            background: #fff;
+            font-size: rem(18px);
+            color: pink;
+            margin-top: 30px;
+        }
+        span {
+            margin-top: 30px;
+            display: block;
+        }
+    }
+    input {
+        @include num(100%, rem(40px));
+        border-bottom: 1px solid #ccc;
+    }
+}
