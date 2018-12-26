@@ -2,6 +2,21 @@
     <div class="section">
         <Banner :imgs="imgs"></Banner>
         <Tabs :tabs="tabs"></Tabs>
+        <div class="titles">
+            今日优选
+        </div>
+        <div class="lists">
+            <dl v-for="(itm,ind) in list" :key="ind">
+                <dt>
+                    <img :src="itm.url" alt="">
+                </dt>
+                <dd>
+                    <h1>{{itm.name}}</h1>
+                    <span>节目: {{itm.num}}</span>
+                    <p>{{itm.msg}}</p>
+                </dd>
+            </dl>
+        </div>
     </div>
 </template>
 <script>
@@ -34,6 +49,32 @@ export default {
               class: "iconfont icon-paihangbang",
               name : '小冰电台'
           },
+      ],
+       list: [
+        {
+          url : "../../static/img/4.png",
+          msg : '愿你的故事有人能懂',
+          name: '末那大叔',
+          num : 18
+        },
+        {
+          url : "../../static/img/5.png",
+          msg : "失去才懂 纯音乐 {完整版}",
+          name: "七月的风八月的雨,卑微的我喜欢遥远的你",
+          num : 281
+        },
+        {
+          url : "../../static/img/4.png",
+          msg : '愿你的故事有人能懂',
+          name: '末那大叔',
+          num : 18
+        },
+        {
+          url : "../../static/img/5.png",
+          msg : "失去才懂 纯音乐 {完整版}",
+          name: "七月的风八月的雨,卑微的我喜欢遥远的你",
+          num : 281
+        }
       ]
     };
   },

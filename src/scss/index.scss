@@ -125,12 +125,12 @@
         background: #32373A;
     }
     .swiper {
-        @include num(100%, rem(200px));
+        @include num(100%, rem(150px));
         border-radius: rem(10px);
         .swiper-slide {
             @include num(100%, 100%);
             img {
-                @include num(100%, rem(200px));
+                @include num(100%, auto);
             }
         }
     }
@@ -156,6 +156,70 @@
             span {
                 margin-top: rem(6px);
                 font-size: rem(10px);
+            }
+        }
+    }
+    .titles {
+        @include num(100%, rem(40px));
+        line-height: rem(40px);
+        text-indent: rem(10px);
+        font-size: rem(16px);
+        font-weight: bold;
+    }
+    .list {
+        @include num(100%, auto);
+        @include box_flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 rem(10px);
+        @include sizing;
+        dl {
+            @include num(33%, auto);
+            @include box_flex;
+            flex-direction: column;
+            dt {
+                flex: 8;
+                img {
+                    @include num(100%, auto);
+                }
+            }
+            dd {
+                flex: 2;
+                span {
+                    padding: 0 rem(10px);
+                    @include ntext(2);
+                }
+            }
+        }
+    }
+    .lists {
+        @include num(100%, auto);
+        @include box_flex;
+        flex-direction: column;
+        dl {
+            @include num(100%, auto);
+            @include box_flex;
+            padding: 0 rem(10px);
+            @include sizing;
+            dt {
+                flex: 2;
+                img {
+                    @include num(100%, auto);
+                }
+            }
+            dd {
+                flex: 8;
+                margin-left: rem(10px);
+                h1 {
+                    font-size: rem(15px);
+                    font-weight: bold;
+                    @include ntext(1);
+                    line-height: 2;
+                }
+                p {
+                    line-height: 2;
+                }
             }
         }
     }

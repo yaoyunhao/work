@@ -23,6 +23,7 @@ export default new Router({
             path: '/home',
             name: "Home",
             component: Home,
+            redirect: "/home/recommend",
             children: [{
                     path: "recommend",
                     name: 'Recommend',
