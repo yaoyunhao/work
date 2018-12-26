@@ -191,8 +191,8 @@ html {
 .wrap {
   width: 100%;
   height: 100%;
-  -webkit-flex: 1 1 0%;
-  flex: 1 1 0%;
+  display: flex;
+  display: -webkit-flex;
   flex-direction: column;
   overflow: hidden;
 }
@@ -205,6 +205,90 @@ html {
   text-align: center;
   line-height: 1.17333rem;
   font-size: 0.53333rem;
+}
+
+.header {
+  width: 100%;
+  height: 1.17333rem;
+  background: #32373A;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header .icon-maikefeng,
+.header .icon-tiaoshi {
+  font-size: 0.53333rem;
+  color: #fff;
+}
+
+.header label {
+  flex: 1;
+  position: relative;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header label input {
+  text-align: center;
+  width: 100%;
+  height: 0.8rem;
+  background: #5B6161;
+  border-radius: 0.8rem;
+  color: #AFB3B4;
+}
+
+.header label input::-webkit-input-placeholder,
+.header label textarea::-webkit-input-placeholder {
+  color: #AFB3B4;
+}
+
+.header label .icon-fangdajing {
+  position: absolute;
+  top: 15px;
+  left: 32%;
+  color: #AFB3B4;
+  font-size: 0.37333rem;
+}
+
+.tab {
+  width: 100%;
+  height: 1.17333rem;
+  background: #32373A;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  line-height: 1.17333rem;
+  padding: 0 0.53333rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tab span {
+  color: #fff;
+  font-size: 0.37333rem;
+  font-weight: bold;
+  height: 0.93333rem;
+}
+
+.tab .active {
+  border-bottom: 5px solid #fff;
 }
 
 .center {
@@ -265,4 +349,112 @@ html {
   width: 100%;
   height: 1.06667rem;
   border-bottom: 1px solid #ccc;
+}
+
+.section {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.section .box {
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #32373A;
+}
+
+.section .swiper {
+  width: 100%;
+  height: 5.33333rem;
+  border-radius: 0.26667rem;
+}
+
+.section .swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.section .swiper .swiper-slide img {
+  width: 100%;
+  height: 5.33333rem;
+}
+
+.section .tabs {
+  width: 100%;
+  height: 2.13333rem;
+  background: #eee;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  padding: 0 0.53333rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+
+.section .tabs p {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section .tabs p i {
+  width: 1.06667rem;
+  height: 1.06667rem;
+  border-radius: 50%;
+  display: inline-block;
+  background: #666;
+  color: #fff;
+  text-align: center;
+  font-size: 0.74667rem;
+  line-height: 1.06667rem;
+}
+
+.section .tabs p span {
+  margin-top: 0.16rem;
+  font-size: 0.26667rem;
+}
+
+.footer {
+  width: 100%;
+  height: 1.17333rem;
+  background: #eee;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  padding: 0 0.53333rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.footer p {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer p i {
+  font-size: 0.53333rem;
+  line-height: 1.5;
+}
+
+.footer p span {
+  font-size: 0.26667rem;
 }

@@ -29,7 +29,7 @@ export default {
       login(){
           if(this.value!== "" && this.pwd!==""){
               if(this.value=="16619947716" && this.pwd=="123456"){
-                  alert('登陆成功')
+                  this.$router.push('/home')
               }else{
                   alert("账号或密码错误")
               }

@@ -6,7 +6,7 @@
 
 .wrap {
     @include num(100%, 100%);
-    @include flex;
+    @include box_flex;
     flex-direction: column;
     overflow: hidden;
 }
@@ -18,6 +18,62 @@
     text-align: center;
     line-height: rem(44px);
     font-size: rem(20px);
+}
+
+.header {
+    @include num(100%, rem(44px));
+    background: #32373A;
+    @include flexs;
+    padding: 0 rem(10px);
+    @include sizing;
+    .icon-maikefeng,
+    .icon-tiaoshi {
+        font-size: rem(20px);
+        color: #fff;
+    }
+    label {
+        flex: 1;
+        position: relative;
+        padding: 0 rem(10px);
+        @include sizing;
+        input {
+            text-align: center;
+            @include num(100%, rem(30px));
+            background: #5B6161;
+            border-radius: rem(30px);
+            color: #AFB3B4;
+        }
+        input::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder {
+            color: #AFB3B4;
+        }
+        .icon-fangdajing {
+            position: absolute;
+            top: 15px;
+            left: 32%;
+            color: #AFB3B4;
+            font-size: rem(14px);
+        }
+    }
+}
+
+.tab {
+    @include num(100%, rem(44px));
+    background: #32373A;
+    @include box_flex;
+    justify-content: space-around;
+    line-height: rem(44px);
+    padding: 0 rem(20px);
+    @include sizing;
+    span {
+        color: #fff;
+        font-size: rem(14px);
+        font-weight: bold;
+        height: rem(35px);
+    }
+    .active {
+        border-bottom: 5px solid #fff;
+    }
 }
 
 .center {
@@ -57,5 +113,70 @@
     input {
         @include num(100%, rem(40px));
         border-bottom: 1px solid #ccc;
+    }
+}
+
+.section {
+    flex: 1;
+    overflow-y: auto;
+    .box {
+        padding: 0 rem(10px);
+        @include sizing;
+        background: #32373A;
+    }
+    .swiper {
+        @include num(100%, rem(200px));
+        border-radius: rem(10px);
+        .swiper-slide {
+            @include num(100%, 100%);
+            img {
+                @include num(100%, rem(200px));
+            }
+        }
+    }
+    .tabs {
+        @include num(100%, rem(80px));
+        background: #eee;
+        @include flexs;
+        padding: 0 rem(20px);
+        @include sizing;
+        border-bottom: 1px solid #eee;
+        p {
+            @include box_flex;
+            flex-direction: column;
+            align-items: center;
+            i {
+                @include cir(rem(40px));
+                background: #666;
+                color: #fff;
+                text-align: center;
+                font-size: rem(28px);
+                line-height: rem(40px);
+            }
+            span {
+                margin-top: rem(6px);
+                font-size: rem(10px);
+            }
+        }
+    }
+}
+
+.footer {
+    @include num(100%, rem(44px));
+    background: #eee;
+    @include flexs;
+    padding: 0 rem(20px);
+    @include sizing;
+    p {
+        @include box_flex;
+        flex-direction: column;
+        align-items: center;
+        i {
+            font-size: rem(20px);
+            line-height: 1.5;
+        }
+        span {
+            font-size: rem(10px);
+        }
     }
 }
