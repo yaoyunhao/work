@@ -9,9 +9,6 @@
             <span>游客试用</span>
           </div>
         </div>
-        <div class="footer">
-          
-        </div>
     </div>
 </template>
 <script>
