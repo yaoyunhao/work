@@ -2,9 +2,7 @@
     <div class="section">
         <Banner :imgs="imgs"></Banner>
         <Tabs :tabs="tabs"></Tabs>
-        <div class="titles">
-            今日优选
-        </div>
+        <div class="titles">今日优选</div>
         <div class="lists">
             <dl v-for="(itm,ind) in list" :key="ind">
                 <dt>
@@ -32,29 +30,29 @@ export default {
         "../../static/img/4 (5).jpg",
         "../../static/img/4 (6).jpg"
       ],
-       tabs:[
-          {
-              class: "iconfont icon-weibiaoti-",
-              name : '电台分类'
-          },
-          {
-              class: "iconfont icon-rili",
-              name : '电台排行'
-          },
-          {
-              class: "iconfont icon-yinleliebiao",
-              name : 'DI电音'
-          },
-          {
-              class: "iconfont icon-paihangbang",
-              name : '小冰电台'
-          },
+      tabs: [
+        {
+          class: "iconfont icon-weibiaoti-",
+          name : "电台分类"
+        },
+        {
+          class: "iconfont icon-rili",
+          name : "电台排行"
+        },
+        {
+          class: "iconfont icon-yinleliebiao",
+          name : "DI电音"
+        },
+        {
+          class: "iconfont icon-paihangbang",
+          name : "小冰电台"
+        }
       ],
-       list: [
+      list: [
         {
           url : "../../static/img/4.png",
-          msg : '愿你的故事有人能懂',
-          name: '末那大叔',
+          msg : "愿你的故事有人能懂",
+          name: "末那大叔",
           num : 18
         },
         {
@@ -65,8 +63,8 @@ export default {
         },
         {
           url : "../../static/img/4.png",
-          msg : '愿你的故事有人能懂',
-          name: '末那大叔',
+          msg : "愿你的故事有人能懂",
+          name: "末那大叔",
           num : 18
         },
         {
@@ -80,7 +78,7 @@ export default {
   },
   components: {
     Banner,
-     Tabs
+    Tabs
   }
 };
 </script>

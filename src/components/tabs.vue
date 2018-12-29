@@ -9,9 +9,8 @@
 <script>
 export default {
   name      : "Tabs",
-  props     : ['tabs'],
-  components: {
-  }
+  props     : ["tabs"],
+  components: {}
 };
 </script>
 <style>

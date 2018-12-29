@@ -5,6 +5,8 @@ import Login from '@/components/login'
 import Home from '@/components/home'
 import Recommend from '@/components/recommend'
 import Radio from '@/components/radio'
+import Member from '@/components/member'
+import My from '@/components/my'
 
 Vue.use(Router)
 
@@ -35,6 +37,16 @@ export default new Router({
                     component: Radio
                 }
             ]
+        },
+        {
+            path: '/my',
+            name: 'My',
+            component: My
+        },
+        {
+            path: '/member',
+            name: 'Member',
+            component: Member
         }
     ]
 })

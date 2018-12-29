@@ -1,15 +1,6 @@
 <template>
     <div class="box">
         <swiper class="swiper" :options="swiperOption">
-            <!-- <swiper-slide class="swiper-slide">
-                <img src="../../static/img/1.jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="swiper-slide">
-                <img src="../../static/img/2.jpg" alt="">
-            </swiper-slide>
-            <swiper-slide class="swiper-slide">
-                <img src="../../static/img/3.jpg" alt="">
-            </swiper-slide> -->
             <swiper-slide class="swiper-slide" v-for="(itm,ind) in imgs" :key="ind">
                 <img :src="itm" alt="">
             </swiper-slide>

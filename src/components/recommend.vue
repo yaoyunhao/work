@@ -1,21 +1,19 @@
 <template>
-    <div class="section">
-        <Banner :imgs="imgs"></Banner>
-        <Tabs :tabs="tabs"></Tabs>
-        <div class="titles">
-            推荐歌单
-        </div>
-        <div class="list">
-            <dl v-for="(itm,ind) in list" :key="ind">
-                <dt>
-                    <img :src="itm.url" alt="">
-                </dt>
-                <dd>
-                    <span>{{itm.msg}}</span>
-                </dd>
-            </dl>
-        </div>
+  <div class="section">
+    <Banner :imgs="imgs"></Banner>
+    <Tabs :tabs="tabs"></Tabs>
+    <div class="titles">推荐歌单</div>
+    <div class="list">
+      <dl v-for="(itm,ind) in list" :key="ind">
+        <dt>
+          <img :src="itm.url" alt="">
+        </dt>
+        <dd>
+          <span>{{itm.msg}}</span>
+        </dd>
+      </dl>
     </div>
+  </div>
 </template>
 <script>
 import Banner from "./banner";

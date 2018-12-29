@@ -27,8 +27,14 @@
     padding: 0 rem(10px);
     @include sizing;
     .icon-maikefeng,
+    .icon-wode,
+    .icon-xiangzuo,
     .icon-tiaoshi {
         font-size: rem(20px);
+        color: #fff;
+    }
+    span {
+        font-size: rem(16px);
         color: #fff;
     }
     label {
@@ -125,7 +131,7 @@
         background: #32373A;
     }
     .swiper {
-        @include num(100%, rem(150px));
+        @include num(100%, rem(200px));
         border-radius: rem(10px);
         .swiper-slide {
             @include num(100%, 100%);
@@ -188,6 +194,7 @@
                 flex: 2;
                 span {
                     padding: 0 rem(10px);
+                    @include sizing;
                     @include ntext(2);
                 }
             }
@@ -242,5 +249,149 @@
         span {
             font-size: rem(10px);
         }
+    }
+}
+
+.memtitle {
+    background: #eee;
+    @include num(100%, auto);
+    @include box_flex;
+    padding: rem(10px);
+    @include sizing;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: rem(1px) solid #ccc;
+    .left {
+        @include box_flex;
+        align-items: center;
+        img {
+            @include cir(rem(60px));
+        }
+        .leftBox {
+            @include box_flex;
+            margin-left: rem(10px);
+            flex-direction: column;
+        }
+    }
+    .right {
+        @include num(auto, auto);
+        border: rem(1px) solid #ccc;
+        border-radius: rem(30px);
+        padding: rem(3px) rem(5px);
+        @include sizing;
+        .icon-jinbi {
+            font-size: rem(14px);
+        }
+    }
+}
+
+.memtop {
+    background: #eee;
+    @include num(100%, rem(30px));
+    @include flexs;
+    padding: rem(25px);
+    @include sizing;
+    p {
+        @include flexs;
+        flex-direction: column;
+        border-right: rem(1px) solid #ccc;
+        padding-right: rem(20px);
+        @include sizing;
+        &:nth-child(4) {
+            border: 0;
+        }
+        .icon-noun__cc {
+            font-size: rem(16px);
+        }
+        strong {
+            font-weight: bold;
+            line-height: 1;
+        }
+    }
+}
+
+.lisCenter {
+    border-bottom: rem(4px) solid #ccc;
+}
+
+.lis {
+    @include num(100%, rem(50px));
+    padding: 0 rem(10px);
+    @include sizing;
+    @include flexs;
+    border-bottom: 1px solid #ccc;
+}
+
+.alllis {
+    @include num(100%, auto);
+    background: #eee;
+    .lisTop {
+        @include num(100%, rem(50px));
+        border-bottom: rem(4px) solid #ccc;
+        border-top: rem(4px) solid #ccc;
+        padding: 0 rem(10px);
+        @include sizing;
+        @include flexs;
+    }
+}
+
+.lisTopRight {
+    @include flexs;
+    align-items: center;
+    img {
+        @include cir(rem(20px));
+    }
+    i {
+        font-size: rem(16px);
+    }
+}
+
+.lisTopLeft {
+    i {
+        font-size: rem(16px);
+        padding-right: rem(10px);
+        @include sizing;
+    }
+}
+
+.lisBottom {
+    @include num(100%, rem(50px));
+    border-bottom: rem(4px) solid #ccc;
+    border-top: rem(4px) solid #ccc;
+    @include box_flex;
+    align-items: center;
+    button {
+        @include num(100%, rem(40px));
+        font-size: rem(16px);
+        background: #eee;
+        border: 0;
+    }
+}
+
+.listss {
+    @include num(100%, auto);
+    @include box_flex;
+    flex-wrap: wrap;
+    margin-top: rem(10px);
+    li {
+        @include flexs;
+        flex-direction: column;
+        @include num(20%, 100%);
+        line-height: 3;
+        i {
+            @include cir(rem(40px));
+            background: pink;
+            text-align: center;
+            line-height: rem(40px);
+            font-size: rem(18px);
+            color: red;
+        }
+    }
+}
+
+.titles {
+    @include num(100%, auto);
+    img {
+        @include num(95%, auto);
     }
 }

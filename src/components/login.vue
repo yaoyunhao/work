@@ -12,34 +12,29 @@
 </template>
 <script>
 export default {
-   name: 'Login',
-   data(){
-       return {
-           value: '',
-           pwd  : ''
-       }
-   },
-   methods:{
-     changeValue(){
-        
-     },
-     changePwd(){
-         
-     },
-      login(){
-          if(this.value!== "" && this.pwd!==""){
-              if(this.value=="16619947716" && this.pwd=="123456"){
-                  this.$router.push('/home')
-              }else{
-                  alert("账号或密码错误")
-              }
-          }else{
-              alert("请输入正确的账号密码")
-          }
-       }
-   }
-}
+  name: "Login",
+  data() {
+    return {
+      value: "",
+      pwd  : ""
+    };
+  },
+  methods: {
+    changeValue() {},
+    changePwd() {},
+    login() {
+      if (this.value !== "" && this.pwd !== "") {
+        if (this.value == "16619947716" && this.pwd == "123456") {
+          this.$router.push("/home");
+        } else {
+          alert("账号或密码错误");
+        }
+      } else {
+        alert("请输入正确的账号密码");
+      }
+    }
+  }
+};
 </script>
 <style>
-
 </style>
